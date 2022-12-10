@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Word Counter">
+
+        <lightning-layout multiple-rows>       
+         <lightning-layout-item size="12" padding="around-medium">
+            <lightning-input  type="text"   label="Word" rows="4" cols="100" placeholder="Enter the Text here"  onchange={wordChangeHandler} name="wordchange">
+            </lightning-input>
+        </lightning-layout-item>
+        <br>
+        
+        <lightning-button-group> 
+
+        <lightning-layout-item size="12" padding="around-medium">
+
+            <lightning-button  variant="brand" label="Count Words"  onclick={WordCalculator} icon-position="right" ></lightning-button>
+            <lightning-button variant="success" label="Success"  onclick={word_to_italic} icon-position="right" ></lightning-button>
+
+        </lightning-layout-item>
+        </lightning-button-group>
+
+
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-formatted-text value={Calculator}></lightning-formatted-text>
+        </lightning-layout-item> 
+
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-formatted-text value={Iti}></lightning-formatted-text>
+        </lightning-layout-item> 
+
+
+    </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,29 @@
+<template>
+<lightning-card title="EMI calculator">
+
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-input  type="number"  step="0.01"  label="Amount"  onchange={amountChangeHandler} name="Amount">
+            </lightning-input>
+        </lightning-layout-item>
+
+        <lightning-layout-item  size="12" padding="around-medium">
+            <lightning-input  type="number"  step="0.01"  label="Interest"  onchange={interestChangeHandler}  name="Interest">
+            </lightning-input>
+        </lightning-layout-item>
+    
+        <lightning-layout-item size="10" padding="around-medium">
+
+            <lightning-button  variant="brand" label="Calculate"  onclick={emiCalculator} icon-position="right" ></lightning-button>
+        </lightning-layout-item>
+        
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-formatted-text value={Calculator}></lightning-formatted-text>
+        </lightning-layout-item>   
+
+    </lightning-layout> 
+
+
+
+</lightning-card>
+</template>
