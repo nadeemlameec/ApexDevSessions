@@ -62,6 +62,11 @@ export default class Quiz_App extends LightningElement {
     event.preventDefault()
 
     }
+
+
+
+
+
 }
 
 
