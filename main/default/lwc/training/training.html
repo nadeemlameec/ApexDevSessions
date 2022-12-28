@@ -1,11 +1,12 @@
 <template>
     <lightning-card title="HelloWorld">
-        <div class="slds-m-around-medium">
-            <h1>hello, {greeting}, {Name}</h1>
+        <div>
+        
             
-            <lightning-input label="Name"  value={greeting} onchange={changeHandler}></lightning-input>
-            <lightning-input label="Name1"  value={Name} onchange={changeHandler1}></lightning-input>
-
+            <lightning-input label="Number1" name="Number1" onchange={Num1handler}></lightning-input>
+            <lightning-input label="Number2"  name="Number2" onchange={Num2handler}></lightning-input>
+            <lightning-button label="click" variant="success" onclick={changeHandler} ></lightning-button>
+            <lightning-formatted-text value={currentOutput}></lightning-formatted-text>
         </div>
 
     </lightning-card>
