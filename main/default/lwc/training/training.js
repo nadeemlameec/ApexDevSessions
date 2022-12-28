@@ -1,20 +1,26 @@
+/* eslint-disable no-dupe-class-members */
+/* eslint-disable no-unused-vars */
+/* eslint-disable radix */
+/* eslint-disable no-alert */
 import { LightningElement,track } from 'lwc';
-
 export default class Training extends LightningElement {
 
 
-
-@track greeting='World';
-@track Name;
-
-changeHandler(event){
-    this.greeting =event.target.value;
-   
+@track currentOutput;
+Number1;
+Number2;
 
 
-}
-changeHandler1(event){
-    this.Name =event.target.value;
+Num1handler(event){
+    this.Number1 =parseInt(event.target.value);
 }
 
-}
+Num2handler(event){
+    this.Number2 =parseInt(event.target.value);
+    }  
+
+changeHandler(){
+    this.currentOutput ='Sum: '+(this.Number1+this.Number2)}
+    
+
+} 
