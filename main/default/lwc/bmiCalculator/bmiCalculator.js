@@ -32,7 +32,4 @@ export default class BmiCalculator extends LightningElement {
     }
 
 
-} 
-
-  
-
+}

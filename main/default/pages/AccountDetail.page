@@ -1,0 +1,5 @@
+<apex:page standardController="Account">
+
+<apex:detail relatedList="True"/>
+
+</apex:page>
